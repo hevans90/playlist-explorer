@@ -1,3 +1,7 @@
 # PlaylistExplorer
 
-`yarn` -> `ng serve`
+Install dependencies: `$ yarn`
+
+Serve: `$ ng serve`
+
+Test: `$ ng test`
