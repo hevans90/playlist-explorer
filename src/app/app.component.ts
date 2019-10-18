@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PlaylistService } from './services/playlist.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'playlist-explorer';
+
+  constructor(private playlistService: PlaylistService) {}
+
+  playlists = this.playlistService.playlists;
 }

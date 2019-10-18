@@ -1,0 +1,39 @@
+{
+  "featuredPlaylists": {
+    "name": "Featured Playlists",
+    "content": [
+      {
+        "id": "pl.2b0e6e332fdf4b7a91164da3162127b5",
+        "kind": "playlist",
+        "name": "New Music Daily",
+        "url": "https://music.apple.com/us/playlist/new-music-daily/pl.2b0e6e332fdf4b7a91164da3162127b5?app=music&at=1000l4QJ&ct=330&itscg=10000&itsct=330",
+        "curator_name": "Apple Music",
+        "artwork": "https://is5-ssl.mzstatic.com/image/thumb/Features123/v4/8d/bc/6a/8dbc6a39-f21e-e726-e795-04715d8f9637/source/600x600cc.jpg"
+      },
+      {
+        "id": "pl.f4d106fed2bd41149aaacabb233eb5eb",
+        "kind": "playlist",
+        "name": "Today's Hits",
+        "url": "https://music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb?app=music&at=1000l4QJ&ct=330&itscg=10000&itsct=330",
+        "curator_name": "Apple Music Pop",
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features117/v4/94/17/2e/94172e16-e5d7-2d2b-66ec-e72473988168/source/600x600cc.jpg"
+      },
+      {
+        "id": "pl.abe8ba42278f4ef490e3a9fc5ec8e8c5",
+        "kind": "playlist",
+        "name": "Rap Life",
+        "url": "https://music.apple.com/us/playlist/rap-life/pl.abe8ba42278f4ef490e3a9fc5ec8e8c5?app=music&at=1000l4QJ&ct=330&itscg=10000&itsct=330",
+        "curator_name": "Apple Music Hip-Hop",
+        "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features113/v4/eb/d2/15/ebd215c9-2b9f-c791-f65a-b79c02086cd5/source/600x600cc.jpg"
+      },
+      {
+        "id": "pl.5cb9c0f3ca9d4fc1bccbaf67ca6201e7",
+        "kind": "playlist",
+        "name": "Up Next",
+        "url": "https://music.apple.com/us/playlist/up-next/pl.5cb9c0f3ca9d4fc1bccbaf67ca6201e7?app=music&at=1000l4QJ&ct=330&itscg=10000&itsct=330",
+        "curator_name": "Apple Music",
+        "artwork": "https://is4-ssl.mzstatic.com/image/thumb/Features113/v4/f9/7c/6e/f97c6ebc-8d33-cca4-a808-3f4d504297ba/source/600x600cc.jpg"
+      }
+    ]
+  }
+}
