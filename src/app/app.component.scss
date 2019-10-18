@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+.playlist__filter {
+  width: 300px;
+}
+
+.playlist__results {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.playlist__card {
+  max-width: 250px;
+  user-select: none;
+  margin-bottom: 24px;
+}
