@@ -29,7 +29,7 @@
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/shared-styles"]
+              "includePaths": ["src/shared-styles", "src/theming"]
             },
             "scripts": []
           },
@@ -91,7 +91,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/shared-styles"]
+              "includePaths": ["src/shared-styles", "src/theming"]
             },
             "scripts": []
           }

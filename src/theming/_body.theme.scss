@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@mixin body-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  body {
+    background: mat-color($background, background);
+    color: mat-color($foreground, text);
+  }
+}
