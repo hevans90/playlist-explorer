@@ -1,16 +1,20 @@
 @import 'layout';
+@import 'breakpoints';
 
 mat-toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 400;
+  height: $footerHeight;
+
+  position: sticky;
+  bottom: 0;
 }
 
-mat-icon,
 .footer__social-link {
-  height: 48px;
-  width: 48px;
+  height: 24px;
+  width: 24px;
 }
 
 .footer__bio {
@@ -18,8 +22,13 @@ mat-icon,
   align-items: center;
 
   .footer__social-link {
-    margin: 0 $margin;
     display: block;
+
+    margin: 0 16px 0 0;
+
+    @include bp-small {
+      margin: 0 16px;
+    }
 
     &:last-child {
       margin: 0;
@@ -34,4 +43,12 @@ mat-icon,
 
 .footer__powered-icon {
   margin-left: 4px;
+}
+
+.footer__author {
+  display: none;
+
+  @include bp-small {
+    display: block;
+  }
 }

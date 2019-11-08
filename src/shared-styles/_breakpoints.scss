@@ -1,0 +1,46 @@
+// responsive breakpoints stolen from https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+
+// Extra small devices (portrait phones, less than 599px)
+// No media query since this is the default (we are building mobile first)
+
+// a mixin encompassing landscape resolutions for all handheld devices as of 2019
+@mixin mb-landscape {
+  @media screen and (min-device-width: 320px) and (max-device-width: 823px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// a mixin encompassing small phone landscape resolutions (i.e. iphone 5)
+@mixin mb-landscape-small {
+  @media screen and (min-device-width: 320px) and (max-device-width: 570px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// Small devices (large handsets, tablets)
+@mixin bp-small {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+// Medium devices (large tablets)
+@mixin bp-medium {
+  @media (min-width: 1023px) {
+    @content;
+  }
+}
+
+// Large devices (desktops < 1080p)
+@mixin bp-large {
+  @media (min-width: 1439px) {
+    @content;
+  }
+}
+
+// Extra Large devices (desktops >= 1080p)
+@mixin bp-xlarge {
+  @media (min-width: 1919px) {
+    @content;
+  }
+}
