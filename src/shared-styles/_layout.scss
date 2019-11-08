@@ -1,6 +1,6 @@
-$pageMargin: 24px;
+$margin: 24px;
 
-$containerHeight: calc(100vh - 2 * #{$pageMargin});
+$containerHeight: calc(100vh - 2 * #{$margin});
 
 @mixin container {
   display: flex;
