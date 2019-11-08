@@ -1,0 +1,9 @@
+$pageMargin: 24px;
+
+$containerHeight: calc(100vh - 2 * #{$pageMargin});
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  min-height: $containerHeight;
+}

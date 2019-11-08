@@ -1,13 +1,1 @@
-<mat-form-field class="playlist__filter">
-  <input #input matInput placeholder="Filter" value="" />
-</mat-form-field>
-
-<section class="playlist__results">
-  <mat-card class="playlist__card" *ngFor="let playlist of displayedPlaylists">
-    <mat-card-header>
-      <mat-card-title>{{ playlist.name }}</mat-card-title>
-      <mat-card-subtitle>{{ playlist.curator_name }}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image [src]="playlist.artwork" alt="artwork" />
-  </mat-card>
-</section>
+<router-outlet></router-outlet>

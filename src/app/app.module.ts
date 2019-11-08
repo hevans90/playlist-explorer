@@ -1,20 +1,32 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-
-const matModules = [MatCardModule, MatInputModule];
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, WelcomeComponent],
   imports: [
     BrowserModule,
-    HttpClientModule,
     BrowserAnimationsModule,
-    ...matModules
+    HttpClientModule,
+    RouterModule.forRoot([
+      {
+        path: 'search',
+        loadChildren: () =>
+          import('./search/search.module').then(m => m.SearchModule)
+      },
+      {
+        path: 'welcome',
+        component: WelcomeComponent
+      },
+      {
+        path: '**',
+        redirectTo: 'welcome' // unresolved routes fall back to the welcome page
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
