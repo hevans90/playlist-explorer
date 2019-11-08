@@ -1,16 +1,19 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
-const materialModules = [MatIconModule];
+const materialModules = [MatIconModule, MatToolbarModule];
+const components = [AppComponent, FooterComponent, WelcomeComponent];
 
 @NgModule({
-  declarations: [AppComponent, WelcomeComponent],
+  declarations: [...components],
   imports: [
     ...materialModules,
     BrowserModule,

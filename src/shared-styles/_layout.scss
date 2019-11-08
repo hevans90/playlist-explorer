@@ -1,9 +1,11 @@
 $margin: 24px;
+$footerHeight: 64px;
 
-$containerHeight: calc(100vh - 2 * #{$margin});
+$containerHeight: calc(100vh - (2 * #{$margin}) - #{$footerHeight});
 
 @mixin container {
   display: flex;
   flex-direction: column;
   min-height: $containerHeight;
+  margin: $margin;
 }

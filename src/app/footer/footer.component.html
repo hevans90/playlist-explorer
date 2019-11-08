@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <div class="footer__bio">
+    A portfolio project by hevans90
+    <a
+      class="footer__social-link"
+      *ngFor="let link of socialLinks"
+      target="_blank"
+      [href]="link.url"
+    >
+      <mat-icon [svgIcon]="link.icon"></mat-icon>
+    </a>
+  </div>
+  <div class="footer__powered-by">
+    Powered by
+    <mat-icon class="footer__powered-icon" svgIcon="angular"></mat-icon>
+  </div>
+</mat-toolbar>

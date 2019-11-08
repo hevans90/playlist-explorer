@@ -5,20 +5,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.welcome__social-links {
-  margin-bottom: 8px;
-}
-
-.welcome__social-link {
-  mat-icon {
-    height: 48px;
-    width: 48px;
-  }
-
-  margin-right: $margin;
-
-  &:last-child {
-    margin: 0;
-  }
-}
