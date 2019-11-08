@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@mixin typography-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  a {
+    color: mat-color($accent, anchor);
+  }
+}

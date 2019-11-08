@@ -67,5 +67,9 @@ $__accent: (
   )
 );
 
+$__accent-additional-keys: (
+  anchor: map-get($__accent, 500)
+);
+
 $primary: mat-palette($__primary);
-$accent: mat-palette($__accent);
+$accent: mat-palette(map-merge($__accent, $__accent-additional-keys));
