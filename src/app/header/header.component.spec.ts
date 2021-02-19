@@ -9,7 +9,7 @@ describe('HeaderComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [HeaderComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 
@@ -23,3 +23,5 @@ describe('HeaderComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+// different change
